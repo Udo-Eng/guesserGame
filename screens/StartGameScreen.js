@@ -55,27 +55,27 @@ function StartGameScreen(props) {
     <View style={styles.rootContainer}>
       <Title>Guess my Number</Title>
       <Card>
-            <InstructionText>Enter a Number</InstructionText>
-            <TextInput
-            style={styles.numberInput}
-            maxLength={2}
-            underlineColorAndroid={"transparent"}
-            keyboardType="number-pad"
-            autoCapitalize="none"
-            autoCorrect={false}
-            onChangeText={numberInputHandler}
-            value={enteredNumber}
-            />
-            <View style={styles.buttonsContainer}>
-            <View style={styles.buttonContainer}>
-                <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
-            </View>
-            <View style={styles.buttonContainer}>
-                <PrimaryButton onPress={confirmNumberHandler} >
-                Confirm
-                </PrimaryButton>
-            </View>
-            </View>
+        <InstructionText>Enter a Number</InstructionText>
+        <TextInput
+          style={styles.numberInput}
+          maxLength={2}
+          underlineColorAndroid={"transparent"}
+          keyboardType="number-pad"
+          autoCapitalize="none"
+          autoCorrect={false}
+          onChangeText={numberInputHandler}
+          value={enteredNumber}
+        />
+        <View style={styles.buttonsContainer}>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
+          </View>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={confirmNumberHandler}>
+              Confirm
+            </PrimaryButton>
+          </View>
+        </View>
       </Card>
     </View>
   );
